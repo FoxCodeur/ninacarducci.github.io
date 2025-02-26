@@ -6,6 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+/*  L’image ne dépassera jamais son conteneur. */
+img {
+	max-width: 100%;
+	height: auto;
+  }
+  
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -70,6 +76,12 @@ body {
 .picture img {
 	width: 100%;
 
+}
+/* positionnnement du H3 dans la section about */
+.about{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 #about-me {
 	flex: 2
@@ -239,10 +251,23 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
-input[type="submit"] {
+/* input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+} */
+/* modification du formulaire, on remplace l'input par un btn */
+.btn-submit {
+    background-color: #BEB45A;
+    padding: .5em 1em;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
+
+
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -354,3 +379,17 @@ input[type="submit"] {
 	}
 }
 
+/* ajout du style pour le footer */
+
+/* Enlever les puces des éléments <li> */
+
+.footer ul, ol {
+    list-style: none;  
+    padding: 0;       
+    margin: 0;         
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}

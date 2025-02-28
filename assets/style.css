@@ -112,8 +112,9 @@ img {
 .gallery .nav {
 	justify-content: center;
 }
+/* Pour obtenir un bon contraste entre le texte et le fond il faut assombrir un peu l'arrière plan */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: black;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -159,6 +160,7 @@ img {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 1.8rem;
 
 }
 .quote__author {

@@ -382,16 +382,79 @@ form textarea {
 }
 
 /* ajout du style pour le footer */
+footer {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+	padding: 20px 0;
+  }
+  
+  .footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .footer-logo-container h2 {
+	font-size: 1.8rem;
+	margin: 0;
+  }
+  
+  .contact-info {
+	text-align: right;
+  }
+  
+  .contact-info a {
+	margin-right: 10px;
+  }
+  
+  .contact-info img {
+	width: 25px;
+	height: 25px;
+	filter: brightness(0) invert(1); /* Change la couleur de l'icône en blanc */
+  }
+  
+  .copyright {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 0.9rem;
+  }
 
-/* Enlever les puces des éléments <li> */
-
-.footer ul, ol {
-    list-style: none;  
-    padding: 0;       
-    margin: 0;         
-}
-
-.footer a {
-    text-decoration: none;
-    color: inherit;
-}
+  
+  @media (max-width: 768px) {
+	.footer-container {
+	  flex-direction: column;
+	  align-items: flex-start; /* Aligner les éléments à gauche */
+	  text-align: left;
+	  padding: 0 10px;
+	}
+  
+	.contact-info {
+	  margin-top: 15px;
+	}
+  
+	.footer-logo-container h2 {
+	  font-size: 1.6rem;
+	}
+  
+	.copyright {
+	  font-size: 0.8rem;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.footer-container {
+	  padding: 0 5px;
+	}
+  
+	.footer-logo-container h2 {
+	  font-size: 1.4rem;
+	}
+  
+	.copyright {
+	  font-size: 0.75rem;
+	}
+  }

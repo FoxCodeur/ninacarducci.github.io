@@ -13,7 +13,7 @@ img {
   }
   
 .top-header {
-	background-color: white;
+	background-color: #ffffff;
 	position: sticky;
 	top:0;
 	z-index: 1000;
@@ -47,6 +47,49 @@ img {
 .social-link img {
 	width: 20px;
 }
+
+/* .carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000000;
+} */
+ /* Agrandir les boutons */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.1);  /* Fond semi-transparent */
+  width: 80px;  /* Largeur du bouton */
+  height: 80px; /* Hauteur du bouton */
+  padding: 10px; /* Ajuster l'espacement interne */
+  border-radius: 50%;  /* Arrondir les boutons */
+  position: absolute; /* Pour positionner les boutons */
+  top: 50%;  /* Centrer verticalement */
+  transform: translateY(-50%); /* Ajuste pour un centrage parfait */
+}
+
+/* Positionnement spécifique pour les boutons "précédent" et "suivant" */
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+/* Agrandir les icônes */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
 
 #about {
 	display: flex;
@@ -383,7 +426,7 @@ form textarea {
 
 /* ajout du style pour le footer */
 footer {
-	background-color: #000;
+	background-color: #1f1f1f;
 	color: #fff;
 	font-family: 'Inter', sans-serif;
 	padding: 20px 0;
@@ -403,58 +446,9 @@ footer {
 	margin: 0;
   }
   
-  .contact-info {
-	text-align: right;
-  }
-  
-  .contact-info a {
-	margin-right: 10px;
-  }
-  
-  .contact-info img {
-	width: 25px;
-	height: 25px;
-	filter: brightness(0) invert(1); /* Change la couleur de l'icône en blanc */
-  }
-  
   .copyright {
 	text-align: center;
 	padding-top: 10px;
 	font-size: 0.9rem;
   }
 
-  
-  @media (max-width: 768px) {
-	.footer-container {
-	  flex-direction: column;
-	  align-items: flex-start; /* Aligner les éléments à gauche */
-	  text-align: left;
-	  padding: 0 10px;
-	}
-  
-	.contact-info {
-	  margin-top: 15px;
-	}
-  
-	.footer-logo-container h2 {
-	  font-size: 1.6rem;
-	}
-  
-	.copyright {
-	  font-size: 0.8rem;
-	}
-  }
-  
-  @media (max-width: 480px) {
-	.footer-container {
-	  padding: 0 5px;
-	}
-  
-	.footer-logo-container h2 {
-	  font-size: 1.4rem;
-	}
-  
-	.copyright {
-	  font-size: 0.75rem;
-	}
-  }

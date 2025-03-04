@@ -18,7 +18,7 @@
 	<!-- Préchargement de l'image du carrousel -->
 	<!-- L'attribut as="image" dans la balise <link rel="preload"> indique
 	explicitement au navigateur que la ressource que nous préchargeons est une image.  -->
-	<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata.webp">
+	<link rel="preload" as="image" href="./assets/images/nina.webp">
 	<!-- les styles -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
@@ -73,7 +73,8 @@
 		  "sameAs": [
 			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
 		  ],
-		  "serviceProvided": "Photographie de mariage, portrait, événementiel"
+		  "serviceProvided": "Photographie de mariage, portrait, événementiel",
+		  "priceRange": "€€€"  // Fourchette de prix moyenne à élevée
 		}
 		</script>
 
@@ -120,13 +121,13 @@
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					data-bs-slide="prev" aria-label="Image précédente">
+					<span class="carousel-control-prev-icon"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					data-bs-slide="next" aria-label="Image suivante">
+					<span class="carousel-control-next-icon"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
@@ -134,7 +135,7 @@
 	</header>
 	<!--------------------- main section ------------------------>
 	<main>
-		<section id="about">
+		<section id="about" aria-label="À propos de Nina Carducci">
 			<h2>À propos de moi</h2>
 			<div class="picture left">
 				<img src="./assets/images/nina.webp " alt="Portrait de Nina">
@@ -146,19 +147,15 @@
 					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
 					immortels, voilà ce qui me fait vibrer.</p>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie :
-					le
-					figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
-					yeux,
-					ou le partager au plus grand nombre.
+					le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
+					yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon
-					approche, ma
-					technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de
-					la
-					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+					approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du
+					bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</article>
 		</section>
-		<section id="gallery">
-			<h3 class="title">Portfolio</h3>
+		<section id="gallery" aria-label="Galerie de photos">
+			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
@@ -180,10 +177,10 @@
 						alt="Couple de mariés vu de face, se tenant par la main devant des palmiers."
 						src="./assets/images/gallery/mariage/jakob-owens.webp">
 					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
-						alt="Couple de mariés vu de face, se tenant par la main devant des palmiers."
+						alt="plan moyen rapproché d'une jeune femme brune, vue de face."
 						src="./assets/images/gallery/portraits/nino-van-prattenburg.webp">
 					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
-						alt="Chanteur vu de face, levant la main gauche et tenant un micro, entouré de fumée dans une salle de concert."
+						alt="Chanteur vu de face, levant la main gauche et tenant un micro, dans une salle de concert."
 						src="./assets/images/gallery/concerts/austin-neill.webp">
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Femme brune souriante, vue de face, assise devant un ordinateur portable."
@@ -193,10 +190,9 @@
 			<div class="quote">
 				<figure>
 					<blockquote class="quote__text">
-						Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
-						fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
-						n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
-						vérité.
+						Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en
+						photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en
+						photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
@@ -213,7 +209,7 @@
 							Île-de-France pour réaliser vos photos</p>
 					</div>
 					<div class="service__price">
-						<h4>350€/demi journée</h4>
+						<p>350€/demi journée</p>
 						<span>Matériel, déplacement inclus</span>
 					</div>
 
@@ -225,7 +221,7 @@
 							optimal pour vos publications</p>
 					</div>
 					<div class="service__price">
-						<h4>50€/photo</h4>
+						<p>50€/photo</p>
 						<span>2 AR par photo</span>
 					</div>
 				</div>
@@ -237,7 +233,7 @@
 							album photo personnalisé</p>
 					</div>
 					<div class="service__price">
-						<h4>400€ album A4</h4>
+						<p>400€ album A4</p>
 						<span>30 pages recto/verso</span>
 					</div>
 				</div>
@@ -246,8 +242,8 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
@@ -280,15 +276,10 @@
 	<footer>
 		<div class="footer-container">
 			<!-- Section avec le logo texte "Nina Carducci" à gauche -->
-			<div class="footer-logo-container">
-				<h2>Nina Carducci</h2>
-			</div>
-			<!-- Section des informations de contact remplacée par Instagram -->
-			<div class="contact-info">
-				<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-					<img src="assets/images/instagram.png" alt="Social Instagram">
-				</a>
-			</div>
+
+			<h2>Nina Carducci</h2>
+
+
 		</div>
 
 		<!-- Section des copyrights -->

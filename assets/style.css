@@ -48,26 +48,17 @@ img {
 	width: 20px;
 }
 
-/* .carousel-control-prev,
-.carousel-control-next {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #000000;
-} */
  /* Agrandir les boutons */
 .carousel-control-prev,
 .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.1);  /* Fond semi-transparent */
-  width: 80px;  /* Largeur du bouton */
-  height: 80px; /* Hauteur du bouton */
-  padding: 10px; /* Ajuster l'espacement interne */
-  border-radius: 50%;  /* Arrondir les boutons */
-  position: absolute; /* Pour positionner les boutons */
-  top: 50%;  /* Centrer verticalement */
-  transform: translateY(-50%); /* Ajuste pour un centrage parfait */
+  width: 80px;  
+  height: 80px; 
+  padding: 10px; 
+  border-radius: 50%; 
+  position: absolute;
+  top: 50%;  
+  transform: translateY(-50%);
 }
 
 /* Positionnement spécifique pour les boutons "précédent" et "suivant" */
@@ -85,10 +76,6 @@ img {
   width: 40px;
   height: 40px;
 }
-
-
-
-
 
 
 #about {
@@ -145,9 +132,6 @@ img {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -157,10 +141,11 @@ img {
 }
 /* Pour obtenir un bon contraste entre le texte et le fond il faut assombrir un peu l'arrière plan */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: black;
+	color: #000000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
 .nav-pills .nav-link {
 	color: #000
 }
@@ -296,10 +281,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
-/* input[type="submit"] {
-	background-color: #BEB45A;
-	padding: .5em 1em
-} */
+
 /* modification du formulaire, on remplace l'input par un btn */
 .btn-submit {
     background-color: #BEB45A;
@@ -311,7 +293,6 @@ form textarea {
     width: 100%;
     text-align: center;
 }
-
 
 
 @media all and (max-width: 1180px) {
